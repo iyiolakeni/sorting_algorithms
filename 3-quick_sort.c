@@ -1,10 +1,5 @@
 #include "sort.h"
 
-void swapped(int *i, int *j);
-void sort_lomuto(int *arr, size_t size, int start, int end);
-int part_lomuto(int *arr, size_t size, int start, int end);
-void quick_sort(int *array, size_t size);
-
 /**
  * swapped - Function to perform swap.
  * @i: Variable for first integer.

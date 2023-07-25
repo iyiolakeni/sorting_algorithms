@@ -48,6 +48,13 @@ void radix_sort(int *array, size_t size);
 void bitonic_sort(int *array, size_t size);
 void quick_sort_hoare(int *array, size_t size);
 
+/*Swap and helper functions*/
+void swapped(int *i, int *j);
+void sort_lomuto(int *arr, size_t size, int start, int end);
+int part_lomuto(int *arr, size_t size, int start, int end);
+void swap_front_node(listint_t **head, listint_t **end, listint_t **curr_swap);
+void swap_end_node(listint_t **head, listint_t **end, listint_t **curr_swap);
+
 /* Print functions */
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
