@@ -1,19 +1,6 @@
 #include "sort.h"
 
 /**
- * swapped - Function to perform swap.
- * @i: Variable for first integer.
- * @j: Variable for second integer.
- */
-
-void swapped(int *i, int *j)
-{
-	int temp = *i;
-	*i = *j;
-	*j = temp;
-}
-
-/**
  * sort_lomuto - Function thatuses recursion for sort.
  * @arr: Variable for the array.
  * @size: Variable for the size.

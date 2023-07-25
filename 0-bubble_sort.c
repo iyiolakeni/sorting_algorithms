@@ -5,6 +5,7 @@
  * @i: Variable for first integer.
  * @j: Variable for second integer.
  */
+
 void swapped(int *i, int *j)
 {
 	int temp = *i;

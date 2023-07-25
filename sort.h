@@ -55,6 +55,7 @@ int part_lomuto(int *arr, size_t size, int start, int end);
 void swap_front_node(listint_t **head, listint_t **end, listint_t **curr_swap);
 void swap_end_node(listint_t **head, listint_t **end, listint_t **curr_swap);
 int print_max(int *arr, int size);
+void change_bin_tree(int *arr, size_t size, size_t low, size_t depth);
 
 /* Print functions */
 void print_array(const int *array, size_t size);
