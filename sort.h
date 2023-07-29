@@ -56,6 +56,10 @@ void swap_front_node(listint_t **head, listint_t **end, listint_t **curr_swap);
 void swap_end_node(listint_t **head, listint_t **end, listint_t **curr_swap);
 int print_max(int *arr, int size);
 void change_bin_tree(int *arr, size_t size, size_t low, size_t depth);
+void merge_miniarr(int *miniarr, int *temp, size_t start, size_t half,
+		size_t end);
+void merge_recurse(int *miniarr, int *temp, size_t start, size_t end);
+void radix_order(int *arr, size_t size, int sdig, int *temp);
 
 /* Print functions */
 void print_array(const int *array, size_t size);
