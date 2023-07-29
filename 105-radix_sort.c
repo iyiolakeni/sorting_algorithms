@@ -1,6 +1,26 @@
 #include "sort.h"
 
 /**
+ * print_max - Function to print max element in an array.
+ * @arr: Variable for array elements.
+ * @size: Variable for array size.
+ *
+ * Return: Array's maximum element.
+ */
+int print_max(int *arr, int size)
+{
+	int max_ele, index;
+
+	for (max_ele = arr[0], index = 1; index < size; index++)
+	{
+		if (arr[index] > max_ele)
+			max_ele = arr[index];
+	}
+
+	return (max_ele);
+}
+
+/**
  * radix_order - Function to sort radix in aascendng order.
  * @arr: Variable for array.
  * @size: Variable for array size.

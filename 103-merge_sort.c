@@ -17,7 +17,7 @@ void merge_recurse(int *miniarr, int *temp, size_t start, size_t end)
 		half = start + (end - start) / 2;
 		merge_recurse(miniarr, temp, start, half);
 		merge_recurse(miniarr, temp, half, end);
-		merge_subarr(miniarr, temp, start, half, end);
+		merge_miniarr(miniarr, temp, start, half, end);
 	}
 }
 
