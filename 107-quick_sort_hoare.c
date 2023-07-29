@@ -33,6 +33,8 @@ void hoare_sort(int *arr, size_t size, int start, int end)
 	if (end - start > 0)
 	{
 		div = hoare_divide(arr, size, start, end);
+
+		/*Perform recursion*/
 		hoare_sort(arr, size, start, div - 1);
 		hoare_sort(arr, size, div, end);
 	}
@@ -52,6 +54,7 @@ int hoare_divide(int *arr, size_t size, int start, int end)
 	int mid, up, down;
 
 	mid = arr[end];
+	/*Perform the dividing*/
 	for (up = start - 1, down = end + 1; up < down;)
 	{
 		do {
@@ -80,8 +83,10 @@ int hoare_divide(int *arr, size_t size, int start, int end)
  */
 void quick_sort_hoare(int *array, size_t size)
 {
+	/*Check for NULL input*/
 	if (array == NULL || size < 2)
 		return;
 
+	/*Sort using quick algorithm*/
 	hoare_sort(array, size, 0, size - 1);
 }
